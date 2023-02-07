@@ -4,3 +4,22 @@ If you would prefer, you can delete them and use your own classes and style defi
 .container {
   width: 50vw;
 }
+
+.photo {
+  width: fit-content;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.text {
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text::first-line {
+  font-weight: bold;
+}

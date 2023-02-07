@@ -5,65 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
   </head>
   <body>
     <main>
-      <form action="">
+      <form action="03-form.html" class="form">
         <h1>Registration Form</h1>
-        <div>
-          <label for="username">Username</label>
-          <input 
-            type="text"
-            name="username"
-            id="username"
-          />
+        <div class="row">
+          <label class="col-30" for="username">Username</label>
+          <input class="col-70" type="text" name="username" id="username" />
         </div>
-        <br />
-        <div>
-          <label for="email">Email</label>
-          <input 
-            type="email"
-            name="email"
-            id="email"
-          />
+        <div class="row">
+          <label class="col-30" for="email">Email</label>
+          <input class="col-70" type="email" name="email" id="email" />
         </div>
-        <br />
-        <div>
-          <label for="password">Password</label>
-          <input 
-            type="password"
-            name="password"
-            id="password"
-          />
+        <div class="row">
+          <label class="col-30" for="password">Password</label>
+          <input class="col-70" type="password" name="password" id="password" />
         </div>
-        <br />
-        <fieldset>
-          <legend>Would you like to sign up for the newsletter?</legend>
-          <input
-            type="radio"
-            name="sign_up_option"
-            id="yes"
-          />
-          <label for="yes">Yes, sign me up</label>
-          <input
-            type="radio"
-            name="sign_up_option"
-            id="no"
-          />
-          <label for="no">No, thank you</label>
+        <div class="row">
+          <fieldset class="sign-up-prompt-area">
+            <legend class="col-30">
+              Would you like to sign up for the newsletter?
+            </legend>
+            <div>
+              <input type="radio" name="sign_up_option" id="yes" />
+              <label for="yes">Yes, sign me up</label>
+            </div>
+            <div>
+              <input type="radio" name="sign_up_option" id="no" />
+              <label for="no">No, thank you</label>
+            </div>
           </fieldset>
-          <br />
-          <label for="date">Date: </label>
-          <input
-            type="date"
-            value="yyyy-mm-dd"
-          />
-          <br />
-          <br />
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Reset" />
+        </div>
+        <div class="row">
+          <label class="col-30" for="date">Date: </label>
+          <input class="col-70" type="date" id="date" value="2023-02-06" />
+        </div>
+        <div class="row">
+          <input class="btn" id="btn-primary" type="submit" value="Submit" />
+          <input class="btn" id="btn-secondary" type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>

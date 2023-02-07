@@ -1,6 +1,3 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
-
 .form {
   display: grid;
   border: 1px solid var(--gray3);
@@ -26,9 +23,6 @@ h1 {
 
 .col-70 {
   flex: 70%;
-}
-
-.form-element {
 }
 
 .cover-25 {

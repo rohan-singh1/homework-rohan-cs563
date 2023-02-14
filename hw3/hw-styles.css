@@ -1,13 +1,129 @@
 body {
-    background: rgb(246,219,231);
-    background: radial-gradient(circle, rgba(246,219,231,1) 0%, rgba(194,214,238,1) 100%);
+  background: rgb(246, 219, 231);
+  background: radial-gradient(
+    circle,
+    rgba(246, 219, 231, 1) 0%,
+    rgba(194, 214, 238, 1) 100%
+  );
 }
 
 h1 {
-    text-align: center;
-}  
+  text-align: center;
+}
 
 /* Code for exercise 01-flex */
 
+.flex-box {
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  font-size: 1em;
+}
+
+.nav-component {
+  padding: 1.5em;
+  color: var(--white);
+  list-style-type: none;
+}
+
+.nav-component:hover {
+  background-color: var(--green);
+}
+
+.nav-component:active {
+  background-color: var(--orange);
+}
+
+.nav-component:focus {
+  border: 2px solid var(--orange);
+}
+
 /* Code for exercise 02-grid */
 
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas:
+    "header header header"
+    "jumbotron jumbotron jumbotron"
+    "jumbotron jumbotron jumbotron"
+    "card1 card2 card3"
+    "card1 card2 card3"
+    "section section section"
+    "section section section"
+    "section section section"
+    "footer footer footer";
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header header"
+      "jumbotron jumbotron"
+      "jumbotron jumbotron"
+      "section section"
+      "section section"
+      "card1 card2"
+      "card1 card2"
+      "footer footer";
+  }
+  .item5 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header "
+      "jumbotron"
+      "jumbotron"
+      "section"
+      "section"
+      "card1"
+      "card2"
+      "footer";
+  }
+  .item5 {
+    display: none;
+  }
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: jumbotron;
+}
+
+.item3 {
+  grid-area: card1;
+}
+
+.item4 {
+  grid-area: card2;
+}
+
+.item5 {
+  grid-area: card3;
+}
+
+.item6 {
+  grid-area: section;
+}
+
+.item7 {
+  grid-area: footer;
+}

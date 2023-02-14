@@ -14,7 +14,81 @@
   </head>
   <body>
     <main>
-      <!-- Add your code here -->
+      <div class="card bg-dark align-items-center" style="height: 100vh">
+        <div class="card bg-light my-auto px-4 align-items-center">
+          <form style="max-width: 22rem">
+            <div class="form-group row mt-4 mx-auto">
+              <h2 class="text-center">CONTACT FORM</h2>
+            </div>
+            <div class="form-group row mt-4">
+              <label for="username" class="col-md-4 col-lg-4 col-sm-4 col-12"
+                >Username:
+              </label>
+              <input type="text" class="form-control col" id="username" />
+            </div>
+            <div class="form-group row mt-3">
+              <label for="email" class="col-md-4 col-lg-4 col-sm-4 col-12"
+                >Email:
+              </label>
+              <input type="email" class="form-control col" id="email" />
+            </div>
+            <div class="form-group row mt-3">
+              <label for="password" class="col-md-4 col-lg-4 col-sm-4 col-12"
+                >Password:</label
+              >
+              <input type="password" class="form-control col" id="password" />
+            </div>
+            <fieldset class="sign-up-prompt-area form-group mt-4">
+              <legend class="fs-5">
+                Would you like to sign up for the newsletter?
+              </legend>
+              <div class="form-check mt-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="yes"
+                  name="newsletter"
+                />
+                <label class="form-check-label" for="yes">
+                  Yes, sign me up
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="no"
+                  name="newsletter"
+                />
+                <label class="form-check-label" for="no"> No, thank you </label>
+              </div>
+            </fieldset>
+            <div class="form-group row mt-4">
+              <label
+                class="control-label col-md-4 col-lg-4 col-sm-4 col-12"
+                for="date"
+                >Date:
+              </label>
+              <input
+                class="form-control col"
+                id="date"
+                value="2023-02-13"
+                type="date"
+              />
+            </div>
+            <div class="form-group row mt-4 mb-4 px-5">
+              <div class="col"></div>
+              <button type="submit" class="btn btn-primary col-4 me-1">
+                Submit
+              </button>
+              <button type="reset" class="btn btn-secondary col-4">
+                Reset
+              </button>
+              <div class="col"></div>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
   </body>
 </html>

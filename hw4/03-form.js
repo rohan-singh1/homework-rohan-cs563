@@ -1,5 +1,4 @@
 addEventListener("submit", (event) => {
-  // document.getElementById("btn-primary").addEventListener("click", function () {
   const userName = document.getElementById("username").value;
   const eMail = document.getElementById("email").value;
   const password = document.getElementById("password").value;

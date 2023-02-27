@@ -1,0 +1,79 @@
+.form {
+  display: grid;
+  border: 1px solid var(--gray3);
+  margin: auto;
+  padding: 1em;
+  border-radius: 2%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.col-30 {
+  flex: 30%;
+  font-weight: bold;
+}
+
+.col-70 {
+  flex: 70%;
+}
+
+.cover-25 {
+  width: 30%;
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.sign-up-prompt-area {
+  border: none;
+}
+
+.btn {
+  flex: 50%;
+  margin: 0.2em;
+  border-radius: 0.3em;
+  padding: 0.75em;
+}
+
+#btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  border: solid var(--green) 1px;
+}
+
+#btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border: solid var(--black) 1px;
+}
+
+#btn-primary:active {
+  background-color: #c07d00;
+  color: var(--black);
+  border: solid var(--black) 1px;
+}
+
+#btn-secondary {
+  background-color: var(--white);
+  color: var(--green);
+  border: solid var(--green) 1px;
+}
+
+#btn-secondary:hover {
+  background-color: var(--lightteal);
+  color: var(--white);
+  border: solid var(--lightteal) 1px;
+}
+
+#btn-secondary:active {
+  background-color: var(--teal);
+  color: var(--white);
+  border: solid var(--teal) 1px;
+}

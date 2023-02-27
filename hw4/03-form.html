@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
+    <script defer src="03-form.js"></script>
   </head>
   <body>
     <main>
-      <form class="form" action="">
+      <form class="form" onsubmit="return false">
         <h1 class="title">Registration Form</h1>
+        <div class="row">
+          <label class="col-30" for="username">Username</label>
+          <input
+            class="col-70"
+            type="text"
+            name="username"
+            id="username"
+            required
+          />
+        </div>
+        <div class="row">
+          <label class="col-30" for="email">Email</label>
+          <input class="col-70" type="email" name="email" id="email" required />
+        </div>
+        <div class="row">
+          <label class="col-30" for="password">Password</label>
+          <input
+            class="col-70"
+            type="password"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="row">
+          <fieldset class="sign-up-prompt-area">
+            <legend class="col-30">
+              Would you like to sign up for the newsletter?
+            </legend>
+            <div>
+              <input type="radio" name="sign_up_option" id="yes" value="true" />
+              <label for="yes">Yes, sign me up</label>
+            </div>
+            <div>
+              <input type="radio" name="sign_up_option" id="no" value="false" />
+              <label for="no">No, thank you</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="row">
+          <label class="col-30" for="date">Date: </label>
+          <input class="col-70" type="date" id="date" value="" />
+        </div>
+        <div class="row">
+          <input class="btn" id="btn-primary" type="submit" value="Submit" />
+          <input class="btn" id="btn-secondary" type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>

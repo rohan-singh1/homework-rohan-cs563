@@ -16,7 +16,7 @@
   color: var(--white);
 }
 
-.resultsSection {
+.results-section {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -24,13 +24,13 @@
   margin: auto;
 }
 
-.drinkImage {
+.drink-image {
   margin: auto;
   width: 200px;
   height: 200px;
 }
 
-.drinkCaption {
+.drink-caption {
   margin-left: auto;
   margin-right: auto;
   text-align: center;

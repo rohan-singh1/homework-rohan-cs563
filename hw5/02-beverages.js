@@ -32,21 +32,20 @@ function populateDrinkElement(drink) {
   const strDrink = drink.strDrink;
   const strDrinkThumbUrl = drink.strDrinkThumb;
   const resultsSection = document.getElementById('results');
-  resultsSection.classList.add('resultsSection');
+  resultsSection.classList.add('results-section');
 
   let drinkDiv = document.createElement('div');
   drinkDiv.className = 'figure';
 
   let drinkImage = document.createElement('img');
   drinkImage.src = strDrinkThumbUrl;
-  drinkImage.className = 'drinkImage';
+  drinkImage.className = 'drink-image';
   drinkImage.alt = 'Thumbnail of a non-alcoholic drink called ' + strDrink;
 
   let drinkCaption = document.createElement('h5');
-  drinkCaption.className = 'drinkCaption';
+  drinkCaption.className = 'drink-caption';
 
   let drinkCaptionText = document.createTextNode(strDrink);
-  drinkCaptionText.className = 'drinkCaptionText';
 
   drinkCaption.appendChild(drinkCaptionText);
   drinkDiv.appendChild(drinkImage);

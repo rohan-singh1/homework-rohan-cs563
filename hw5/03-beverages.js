@@ -6,7 +6,7 @@ function addDrinkToDoc(drink) {
   console.log(drink.strDrinkThumb);
 
   let resultsSection = $('#results');
-  resultsSection.addClass('resultsSection');
+  resultsSection.addClass('results-section');
 
   const drinkDiv = $('<div></div>');
   drinkDiv.attr('class', 'figure');
@@ -14,11 +14,11 @@ function addDrinkToDoc(drink) {
   let drinkImage = $('<img></<img>');
   const altText = 'Thumbnail of a non-alcoholic drink called ' + drink.strDrink;
   drinkImage.attr('src', drink.strDrinkThumb);
-  drinkImage.attr('class', 'drinkImage');
+  drinkImage.attr('class', 'drink-image');
   drinkImage.attr('alt', altText);
 
   let drinkCaption = $('<h5></h5>');
-  drinkCaption.attr('class', 'drinkCaption');
+  drinkCaption.attr('class', 'drink-caption');
 
   drinkCaption.append(drink.strDrink);
   drinkDiv.append(drinkImage);

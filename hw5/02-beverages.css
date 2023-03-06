@@ -2,13 +2,40 @@
   width: 80px;
   height: 80px;
 }
-
 .figure {
   border: 0.5rem solid var(--white);
+  background-color: '#ffaaaa';
+  padding: 0px;
+  margin: 10px;
+  display: inline-block;
 }
 
 .figure:hover {
   border: 0.5rem solid var(--purple);
   background-color: var(--purple);
   color: var(--white);
+}
+
+.resultsSection {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.drinkImage {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.drinkCaption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow-wrap: 'normal';
+  padding: 15px;
+  font-weight: bold;
+  max-width: 180px;
 }
